@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router'
 import ProductCard from '../UI/productCard'
-import Button from '../UI/Button'
 import axios from 'axios'
 
 

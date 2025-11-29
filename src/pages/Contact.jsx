@@ -8,7 +8,7 @@ export default function Contact() {
 
                 <form className="space-y-5">
 
-                    {/* Fixed Name */}
+
                     <div>
                         <label className="block mb-1 font-medium">Your Name</label>
                         <input
@@ -19,7 +19,7 @@ export default function Contact() {
                         />
                     </div>
 
-                    {/* Fixed Email */}
+
                     <div>
                         <label className="block mb-1 font-medium">Email Address</label>
                         <input
@@ -30,7 +30,7 @@ export default function Contact() {
                         />
                     </div>
 
-                    {/* Fixed Phone */}
+
                     <div>
                         <label className="block mb-1 font-medium">Phone Number</label>
                         <input
@@ -41,7 +41,7 @@ export default function Contact() {
                         />
                     </div>
 
-                    {/* Fixed Address */}
+
                     <div>
                         <label className="block mb-1 font-medium">Address</label>
                         <input
@@ -52,7 +52,7 @@ export default function Contact() {
                         />
                     </div>
 
-                    {/* Message Box (editable) */}
+
                     <div>
                         <label className="block mb-1 font-medium">Message</label>
                         <textarea
@@ -62,7 +62,7 @@ export default function Contact() {
                         ></textarea>
                     </div>
 
-                    {/* Button */}
+
                     <button
                         type="submit"
                         className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition font-medium"

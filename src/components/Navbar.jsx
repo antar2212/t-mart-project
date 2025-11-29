@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { CiSearch, CiUser } from 'react-icons/ci'
 import { FaBars } from 'react-icons/fa'
 import { TfiShoppingCart } from 'react-icons/tfi'
-import { Link } from 'react-router' // Note: This should ideally be 'react-router-dom' for web apps
+import { Link } from 'react-router'
 
 const Navbar = () => {
 
@@ -11,15 +11,14 @@ const Navbar = () => {
   return (
     <>
       <nav className="relative">
-        {/* Responsive Fix: ছোট স্ক্রিনে Padding কমানো হয়েছে */}
+
         <div className="container flex justify-between items-center py-4 md:py-0">
-          {/* Logo */}
-          {/* py-[54px] কে শুধুমাত্র md স্ক্রিনের জন্য রাখা হয়েছে, ছোট স্ক্রিনে কম padding থাকবে */}
+
           <div className='py-4 md:py-[54px]'>
             <img src="/logo.png" alt="logo" />
           </div>
 
-          {/* Desktop Menu (hidden on mobile by default) */}
+
           <div className='hidden md:block'>
             <ul className='text-base font-medium text-secondary flex gap-10'>
               <li><Link to="/">Home</Link></li>
@@ -31,7 +30,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Mobile Menu (Hidden on desktop) */}
+
           <ul className={`md:hidden text-base font-medium text-secondary flex flex-col items-center
                         fixed top-0 right-0 w-[250px] h-screen pt-20 bg-[#f1f1f1] gap-10
                         transition-transform duration-300 z-50 shadow-lg 
@@ -45,7 +44,7 @@ const Navbar = () => {
             <li><Link to="/contact" onClick={() => setShow(false)}>Contact</Link></li>
             <li><Link to="/login" onClick={() => setShow(false)}>Login</Link></li>
 
-            {/* Mobile মেনুতে Login/Register বাটনগুলোর জন্য অতিরিক্ত স্টাইল যোগ করা হয়েছে */}
+
             <li className='mt-4'>
               <Link className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition block w-full text-center" to="/login" onClick={() => setShow(false)}>Login</Link>
             </li>
@@ -70,7 +69,6 @@ const Navbar = () => {
               <li><Link><TfiShoppingCart /></Link></li>
             </ul>
 
-            {/* Mobile Toggle Button */}
             <button
               onClick={() => setShow(!show)}
               className='cursor-pointer md:hidden text-2xl'>

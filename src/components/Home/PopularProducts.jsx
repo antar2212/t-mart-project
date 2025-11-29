@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router'
 import ProductCard from '../UI/productCard'
 import axios, { all } from 'axios'
 import Skeliton from '../UI/Skeliton'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const PopularProducts = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1200,
+  //   });
+  //   AOS.refresh();
+  // }, []);
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [categories, setCategories] = useState([

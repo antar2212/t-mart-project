@@ -2,75 +2,58 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-            <div className="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-xl">
-                <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+      <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-8">
+        <h2 className="text-3xl font-semibold text-center mb-6 text-gray-800">
+          Contact Us
+        </h2>
 
-                <form className="space-y-5">
+        <form className="space-y-5">
+          {/* Name */}
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Full Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            />
+          </div>
 
+          {/* Email */}
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Email Address
+            </label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            />
+          </div>
 
-                    <div>
-                        <label className="block mb-1 font-medium">Your Name</label>
-                        <input
-                            type="text"
-                            value="Sajib Gazi"
-                            className="w-full p-3 border rounded-lg outline-none bg-gray-100"
-                            readOnly
-                        />
-                    </div>
+          {/* Message */}
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Message
+            </label>
+            <textarea
+              rows="4"
+              placeholder="Write your message..."
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            ></textarea>
+          </div>
 
-
-                    <div>
-                        <label className="block mb-1 font-medium">Email Address</label>
-                        <input
-                            type="email"
-                            value="sajib@example.com"
-                            className="w-full p-3 border rounded-lg outline-none bg-gray-100"
-                            readOnly
-                        />
-                    </div>
-
-
-                    <div>
-                        <label className="block mb-1 font-medium">Phone Number</label>
-                        <input
-                            type="text"
-                            value="+8801XXXXXXXXX"
-                            className="w-full p-3 border rounded-lg outline-none bg-gray-100"
-                            readOnly
-                        />
-                    </div>
-
-
-                    <div>
-                        <label className="block mb-1 font-medium">Address</label>
-                        <input
-                            type="text"
-                            value="Dhaka, Bangladesh"
-                            className="w-full p-3 border rounded-lg outline-none bg-gray-100"
-                            readOnly
-                        />
-                    </div>
-
-
-                    <div>
-                        <label className="block mb-1 font-medium">Message</label>
-                        <textarea
-                            rows="4"
-                            placeholder="Write your message..."
-                            className="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                        ></textarea>
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition font-medium"
-                    >
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
     );
 }

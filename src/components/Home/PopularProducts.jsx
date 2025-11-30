@@ -7,10 +7,10 @@ import Skeliton from '../UI/Skeliton'
 
 const PopularProducts = () => {
   // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1200,
-  //   });
-  //   AOS.refresh();
+  //   AOS.init({
+  //     duration: 1200,
+  //   });
+  //   AOS.refresh();
   // }, []);
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -41,15 +41,26 @@ const PopularProducts = () => {
             <p className='max-w-[750px] pt-7 pb-20 text-base text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incididunt ut labore et dolore magna aliqua.</p>
           </div>
 
+
           <div className='pb-16'>
-            <ul className='flex gap-10'>
+            <ul className='flex flex-wrap gap-x-7 gap-y-4 justify-start text-secondary font-medium'>
               {
                 categories.map((item) => (
-                  <li key={item}><button onClick={() => setSelectedCategory(item == "all" ? "" : item)} className={`${item == selectedCategory && "text-bagde"} capitalize cursor-pointer`}>{item}</button></li>
+                  <li key={item}>
+                    <button
+                      onClick={() => setSelectedCategory(item === "all" ? "" : item)}
+                      className={`
+                            ${item === selectedCategory ? "text-bagde font-semibold border-b-2 border-bagde" : "text-secondary hover:text-bagde"} 
+                       capitalize cursor-pointer transition-colors duration-300 px-3 py-1`}
+                    >
+                      {item}
+                    </button>
+                  </li>
                 ))
               }
             </ul>
           </div>
+
 
           {
             loading ? (

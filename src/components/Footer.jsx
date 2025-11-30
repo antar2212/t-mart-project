@@ -11,10 +11,10 @@ const Footer = () => {
       <section className='pt-[100px] bg-background'>
         <div className="container text-secondary">
 
-          {/* TOP GRID */}
+
           <div className='grid gap-10 sm:grid-cols-2 lg:grid-cols-4'>
 
-            {/* Column 1 */}
+
             <div>
               <Link to="/"><img className='pb-7' src="/logo.png" alt="logo" /></Link>
 
@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Column 2 */}
+
             <div>
               <h3 className='text-lg font-medium text-primary pb-7'>Categories</h3>
               <ul className='text-base flex flex-col gap-2.5'>
@@ -64,7 +64,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 3 */}
+
             <div className='pb-2.5'>
               <h3 className='text-lg font-medium text-primary pb-7'>Infomation</h3>
               <ul className='text-base flex flex-col gap-2.5'>
@@ -77,7 +77,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 4 */}
+
             <div className='pb-2.5'>
               <h3 className='text-lg text-primary pb-8'>Newsletter</h3>
               <p className='text-base pb-3.5'>
@@ -96,7 +96,7 @@ const Footer = () => {
 
           </div>
 
-          {/* BOTTOM BAR */}
+
           <div className='py-4 border-t border-secondary flex flex-col sm:flex-row justify-between items-center gap-4 mt-6'>
             <p>© 2021 All Right Reserved.</p>
 

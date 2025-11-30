@@ -71,7 +71,7 @@ const ProductItem = () => {
             <div className='pb-8 md:pb-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-5'>
 
 
-              <ul className='flex gap-4 sm:gap-8 overflow-x-auto whitespace-nowrap pb-2 text-secondary font-medium'>
+              <ul className='flex flex-wrap gap-x-7 gap-y-4 justify-start text-secondary font-medium'>
                 {
                   categories.map((item) => (
                     <li key={item} className="flex-shrink-0">
